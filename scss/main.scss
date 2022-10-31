@@ -1,0 +1,18 @@
+@import 'config';
+@import 'menu';
+
+body {
+  font-family: projectFont, sans-serif;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 68px;
+}

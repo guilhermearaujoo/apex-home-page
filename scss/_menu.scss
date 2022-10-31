@@ -1,0 +1,104 @@
+.logo {
+  @include transformY(-200px);
+  img {
+    width: 100px;
+  }
+}
+
+.menu {
+  &-link {
+    display: inline-block;
+    width: 140px;
+    height: 90px;
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 17px;
+    // font-weight: weigth(bold); //no need to include 'cause only added bold font
+    letter-spacing: 1px;
+    text-align: center;
+    background: rgb(46, 46, 46);
+    background: linear-gradient(180deg, rgba(46, 46, 46, 0.8) 0%, rgba(46, 46, 46, 0.8) 71%, rgba(46, 46, 46, 0) 100%);
+    @include transform-skew-translate(-200px, 45deg);
+ 
+    
+
+    &::after {
+      content: "";
+      position: relative;
+      height: 10px;
+      width: 100%;
+      background-color: #808080;
+      display: block;
+      top: 42px;
+    }
+
+    &:hover {
+      background: rgb(69, 69, 69);
+      background: linear-gradient(
+        180deg,
+        rgba(69, 69, 69, 0.8) 0%,
+        rgba(69, 69, 69, 0.8) 71%,
+        rgba(69, 69, 69, 0) 100%
+      );
+    }
+
+    &-text {
+      display: block;
+      @include transfor-skewX(-45deg);
+      position: relative;
+      top: 30px;
+    }
+
+    &.active {
+      background: rgb(163, 6, 6);
+      background: linear-gradient(180deg, rgba(163, 6, 6, 0.6) 0%, rgba(163, 6, 6, 1) 71%, rgba(163, 6, 6, 0) 100%);
+      color: white;
+
+      &::after {
+        background-color: #fa4c1beb;
+        opacity: 80%;
+      }
+
+      &:hover {
+        background: rgb(189, 10, 10);
+        background: linear-gradient(
+          180deg,
+          rgb(189, 10, 10, 0.6) 0%,
+          rgb(189, 10, 10, 1) 71%,
+          rgb(189, 10, 10, 0) 100%
+        );
+
+        &::after {
+          background-color: #ff732e;
+        }
+      }
+    }
+  }
+}
+
+.icons {
+  display: grid;
+  width: 170px;
+  grid-template-columns: auto auto auto;
+  column-gap: 0.7rem;
+  margin-top: 40px;
+
+  &-item {
+    @include transformY(-100px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.2rem;
+    
+    img {
+      width: 22px;
+      height: 22px;
+    }
+
+    &-text {
+      font-size: 17px;
+      color: white;
+    }
+  }
+}

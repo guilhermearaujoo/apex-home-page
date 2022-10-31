@@ -1,0 +1,44 @@
+@font-face {
+  font-family: projectFont;
+  src: url('../fonts/AgencyFB-Bold.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// $font-weigths: (
+//   "thin": 200,
+//   "medium": 500,
+//   "bold": 700,
+// );
+
+// @function weigth($weigth-name) {
+//   @return map-get($font-weigths, $weigth-name);
+// }
+
+@mixin transfor-skewX($degree) {
+  transform: skewX($degree);;
+  -webkit-transform: skewX($degree);;
+  -moz-transform: skewX($degree);;
+  -ms-transform: skewX($degree);;
+  -o-transform: skewX($degree);;
+}
+
+@mixin transformY($position) {
+  transform: translateY($position);
+  -webkit-transform: translateY($position);
+  -moz-transform: translateY($position);
+  -ms-transform: translateY($position);
+  -o-transform: translateY($position);
+}
+
+@mixin transform-skew-translate($position, $degree) {
+  transform: translateY($position) translateX($position) skewX($degree);;
+  -webkit-transform: translateY($position) translateX($position) skewX($degree);;
+  -moz-transform: translateY($position) translateX($position) skewX($degree);;
+  -ms-transform: translateY($position) translateX($position) skewX($degree);;
+  -o-transform: translateY($position) translateX($position) skewX($degree);;
+}
