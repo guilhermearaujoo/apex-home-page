@@ -2,7 +2,7 @@
 
 ---
 ## About
-:rocket: This project is a simulation of _**Apex Legends home page**_ customized by me. It has some GSAP cool functionalites. Click on this link [Apex Home Page]() and see the page.
+:rocket: This project is a simulation of _**Apex Legends home page**_ customized by me. It has some GSAP cool functionalites. Click on this link [Apex Home Page](https://guilhermearaujoo.github.io/apex-home-page/dist/index.html) and see the page.
 
 ---
 ## Technologies:
